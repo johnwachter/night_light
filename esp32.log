@@ -1,0 +1,213 @@
+Toolchain path: /home/corey/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-80-g6c4433a
+Compiler version: 5.2.0
+Python requirements from /home/corey/esp/esp-idf/requirements.txt are satisfied.
+
+Project is not inside a git repository, will not use 'git describe' to determine PROJECT_VER.
+App "https_server" version: 1
+Flashing binaries to serial port /dev/ttyUSB0 (app at offset 0x10000)...
+esptool.py v2.6
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32D0WDQ5 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+MAC: 30:ae:a4:dd:a5:5c
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 24416 bytes to 14618...
+Writing at 0x00001000... (100 %)Wrote 24416 bytes (14618 compressed) at 0x00001000 in 1.3 seconds (effective 150.8 kbit/s)...
+Hash of data verified.
+Compressed 801952 bytes to 490409...
+Writing at 0x00010000... (3 %)Writing at 0x00014000... (6 %)Writing at 0x00018000... (10 %)Writing at 0x0001c000... (13 %)Writing at 0x00020000... (16 %)Writing at 0x00024000... (20 %)Writing at 0x00028000... (23 %)Writing at 0x0002c000... (26 %)Writing at 0x00030000... (30 %)Writing at 0x00034000... (33 %)Writing at 0x00038000... (36 %)Writing at 0x0003c000... (40 %)Writing at 0x00040000... (43 %)Writing at 0x00044000... (46 %)Writing at 0x00048000... (50 %)Writing at 0x0004c000... (53 %)Writing at 0x00050000... (56 %)Writing at 0x00054000... (60 %)Writing at 0x00058000... (63 %)Writing at 0x0005c000... (66 %)Writing at 0x00060000... (70 %)Writing at 0x00064000... (73 %)Writing at 0x00068000... (76 %)Writing at 0x0006c000... (80 %)Writing at 0x00070000... (83 %)Writing at 0x00074000... (86 %)Writing at 0x00078000... (90 %)Writing at 0x0007c000... (93 %)Writing at 0x00080000... (96 %)Writing at 0x00084000... (100 %)Wrote 801952 bytes (490409 compressed) at 0x00010000 in 43.4 seconds (effective 147.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 117...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (117 compressed) at 0x00008000 in 0.0 seconds (effective 1507.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+MONITOR
+e 18:26:ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6324
+load:0x40078000,len:11308
+load:0x40080400,len:6680
+entry 0x40080760
+[0;32mI (29) boot: ESP-IDF v3.3-beta2-20-gff020c3a1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 18:26:14[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (35) boot: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot: SPI Mode       : DIO[0m
+[0;32mI (43) boot: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot:  3 storage          Unknown data     01 82 00180000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x21704 (136964) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0x0003172c vaddr=0x3ffb0000 size=0x02de4 ( 11748) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0x00034518 vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=0x00034920 vaddr=0x40080400 size=0x0b6f0 ( 46832) load[0m
+[0;32mI (184) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0x8fb0c (588556) map[0m
+[0;32mI (390) esp_image: segment 5: paddr=0x000cfb2c vaddr=0x4008baf0 size=0x04144 ( 16708) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (407) cpu_start: Pro cpu up.[0m
+[0;32mI (411) cpu_start: Application information:[0m
+[0;32mI (416) cpu_start: Project name:     https_server[0m
+[0;32mI (421) cpu_start: App version:      1[0m
+[0;32mI (426) cpu_start: Compile time:     Mar  9 2019 18:26:15[0m
+[0;32mI (432) cpu_start: ELF file SHA256:  1f4dda03885e1b62...[0m
+[0;32mI (438) cpu_start: ESP-IDF:          v3.3-beta2-20-gff020c3a1[0m
+[0;32mI (444) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (455) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (461) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFB8E88 len 00027178 (156 KiB): DRAM[0m
+[0;32mI (474) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (480) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 4008FC34 len 000103CC (64 KiB): IRAM[0m
+[0;32mI (493) cpu_start: Pro cpu start user code[0m
+[0;32mI (175) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (240) APP: Initializing SPIFFS[0m
+[0;32mI (340) APP: Partition size: total: 956561, used: 502[0m
+I (340) wifi: wifi driver task: 3ffc2704, prio:23, stack:3584, core=0
+I (340) wifi: wifi firmware version: 53ea8b1
+I (340) wifi: config NVS flash: enabled
+I (340) wifi: config nano formating: disabled
+[0;32mI (350) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (360) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+I (390) wifi: Init dynamic tx buffer num: 32
+I (390) wifi: Init data frame dynamic rx buffer num: 32
+I (390) wifi: Init management frame dynamic rx buffer num: 32
+I (390) wifi: Init management short buffer num: 32
+I (400) wifi: Init static rx buffer size: 1600
+I (400) wifi: Init static rx buffer num: 10
+I (410) wifi: Init dynamic rx buffer num: 32
+[0;32mI (410) APP: Setting WiFi configuration SSID ThisIsPrivate...[0m
+[0;32mI (500) phy: phy_version: 4100, 6fa5e27, Jan 25 2019, 17:02:06, 0, 0[0m
+I (500) wifi: mode : sta (30:ae:a4:dd:a5:5c)
+[0;32mI (510) APP: SYSTEM_EVENT_STA_START[0m
+I (750) wifi: new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1
+I (1740) wifi: state: init -> auth (b0)
+I (1740) wifi: state: auth -> assoc (0)
+I (1750) wifi: state: assoc -> run (10)
+I (1760) wifi: connected with ThisIsPrivate, channel 2, bssid = cc:40:d0:72:80:e4
+I (1760) wifi: pm start, type: 1
+
+[0;32mI (3840) event: sta ip: 192.168.1.14, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3840) APP: SYSTEM_EVENT_STA_GOT_IP[0m
+[0;32mI (3840) APP: Got IP: '192.168.1.14'[0m
+[0;32mI (3840) APP: Starting server[0m
+[0;32mI (3850) esp_https_server: Starting server[0m
+[0;32mI (3960) esp_https_server: Server listening on port 443[0m
+[0;32mI (3960) APP: Registering URI handlers[0m
+[0;32mI (30880) APP: httpd request info mehtod: 1, uri: /[0m
+Guru Meditation Error: Core  0 panic'ed (LoadStoreError). Exception was unhandled.
+Core 0 register dump:
+PC      : 0x4000c52f  PS      : 0x00060d30  A0      : 0x800d2df6  A1      : 0x3ffca230  
+A2      : 0x3f403078  A3      : 0x3ffca260  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0x40404040  A8      : 0x00000000  A9      : 0x3f40307f  
+A10     : 0x0000002f  A11     : 0x3f40307f  A12     : 0x3ffca210  A13     : 0x0000000c  
+A14     : 0x00000000  A15     : 0xff000000  SAR     : 0x00000004  EXCCAUSE: 0x00000003  
+EXCVADDR: 0x3f40307f  LBEG    : 0x400012e5  LEND    : 0x40001309  LCOUNT  : 0x800d2dc7  
+
+ELF file SHA256: 1f4dda03885e1b62e1f42d7d9477e41e93149cbad420979254d1945c2ffb7637
+
+Backtrace: 0x4000c52f:0x3ffca230 0x400d2df3:0x3ffca250 0x40124f03:0x3ffca490 0x40126045:0x3ffca4d0 0x401260be:0x3ffca560 0x401251b4:0x3ffca580 0x4012549a:0x3ffca5a0 0x4012550c:0x3ffca5e0 0x4008cf49:0x3ffca600
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6324
+load:0x40078000,len:11308
+load:0x40080400,len:6680
+entry 0x40080760
+[0;32mI (29) boot: ESP-IDF v3.3-beta2-20-gff020c3a1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 18:26:14[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (35) boot: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot: SPI Mode       : DIO[0m
+[0;32mI (43) boot: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot:  3 storage          Unknown data     01 82 00180000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x21704 (136964) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0x0003172c vaddr=0x3ffb0000 size=0x02de4 ( 11748) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0x00034518 vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=0x00034920 vaddr=0x40080400 size=0x0b6f0 ( 46832) load[0m
+[0;32mI (184) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0x8fb0c (588556) map[0m
+[0;32mI (391) esp_image: segment 5: paddr=0x000cfb2c vaddr=0x4008baf0 size=0x04144 ( 16708) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (408) cpu_start: Pro cpu up.[0m
+[0;32mI (411) cpu_start: Application information:[0m
+[0;32mI (416) cpu_start: Project name:     https_server[0m
+[0;32mI (422) cpu_start: App version:      1[0m
+[0;32mI (426) cpu_start: Compile time:     Mar  9 2019 18:26:15[0m
+[0;32mI (432) cpu_start: ELF file SHA256:  1f4dda03885e1b62...[0m
+[0;32mI (438) cpu_start: ESP-IDF:          v3.3-beta2-20-gff020c3a1[0m
+[0;32mI (445) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (437) cpu_start: App cpu up.[0m
+[0;32mI (455) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (462) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFB8E88 len 00027178 (156 KiB): DRAM[0m
+[0;32mI (474) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 4008FC34 len 000103CC (64 KiB): IRAM[0m
+[0;32mI (493) cpu_start: Pro cpu start user code[0m
+[0;32mI (176) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (240) APP: Initializing SPIFFS[0m
+[0;32mI (340) APP: Partition size: total: 956561, used: 502[0m
+I (340) wifi: wifi driver task: 3ffc2704, prio:23, stack:3584, core=0
+I (340) wifi: wifi firmware version: 53ea8b1
+I (340) wifi: config NVS flash: enabled
+I (340) wifi: config nano formating: disabled
+[0;32mI (350) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (360) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+I (390) wifi: Init dynamic tx buffer num: 32
+I (390) wifi: Init data frame dynamic rx buffer num: 32
+I (390) wifi: Init management frame dynamic rx buffer num: 32
+I (390) wifi: Init management short buffer num: 32
+I (400) wifi: Init static rx buffer size: 1600
+I (400) wifi: Init static rx buffer num: 10
+I (410) wifi: Init dynamic rx buffer num: 32
+[0;32mI (410) APP: Setting WiFi configuration SSID ThisIsPrivate...[0m
+[0;32mI (510) phy: phy_version: 4100, 6fa5e27, Jan 25 2019, 17:02:06, 0, 0[0m
+I (510) wifi: mode : sta (30:ae:a4:dd:a5:5c)
+[0;32mI (510) APP: SYSTEM_EVENT_STA_START[0m
+I (750) wifi: new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1
+I (1740) wifi: state: init -> auth (b0)
+I (1750) wifi: state: auth -> assoc (0)
+I (1750) wifi: state: assoc -> run (10)
+I (1780) wifi: connected with ThisIsPrivate, channel 2, bssid = cc:40:d0:72:80:e4
+I (1780) wifi: pm start, type: 1
+
+[0;32mI (3840) event: sta ip: 192.168.1.14, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3840) APP: SYSTEM_EVENT_STA_GOT_IP[0m
+[0;32mI (3840) APP: Got IP: '192.168.1.14'[0m
+[0;32mI (3840) APP: Starting server[0m
+[0;32mI (3850) esp_https_server: Starting server[0m
+[0;32mI (3960) esp_https_server: Server listening on port 443[0m
+[0;32mI (3960) APP: Registering URI handlers[0m
