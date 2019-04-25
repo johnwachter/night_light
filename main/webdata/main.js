@@ -162,3 +162,15 @@ function colorSliders(){
         colorNumbrVals();
     });
 }
+
+function submitButton(){
+    let content = {some: 'content'};
+
+    fetch('/color', {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(content)
+    })
+}
