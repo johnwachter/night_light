@@ -35,7 +35,7 @@ QueueHandle_t xLEDBrightnessQueue = NULL;
 QueueHandle_t xLEDColorQueue = NULL;
 
 te_t index_te;
-uint32_t index_values[4] = {0,0,0,0};  //TODO: make this a struct
+uint32_t index_values[4] = {100,200,0,0};  //TODO: make this a struct
 #define DIMMER 0
 #define LED_R 1
 #define LED_G 2
